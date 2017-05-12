@@ -1,4 +1,5 @@
 # terminal-radio
+![Screenshot](screenshot.png)
 
 Info
 ====================
@@ -13,4 +14,3 @@ Usage
 ====================
 	./tradio
 
-![Screenshot](screenshot.png)
