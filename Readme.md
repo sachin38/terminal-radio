@@ -12,4 +12,4 @@ Requirements
 Usage
 ====================
 	./tradio
-	![Alt text] (screenshot.png?raw=true)
+	![Screenshot] (screenshot.png)
