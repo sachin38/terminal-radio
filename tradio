@@ -16,7 +16,8 @@ echo "7)BBC Radio 5 live sportball extra"
 echo "8)BBC Radio 6 Music"
 echo "9)BBC Radio 2"
 echo "10)BBC Radio 1"
-echo -e "11)BBC 1xtra\n\n"
+echo "11)Kantipur Radio"
+echo -e "12)BBC 1xtra\n\n"
 
 read -p "What would you like to hear: " station
 
@@ -73,11 +74,15 @@ case "$station" in
 		;;
 	11)
 		clear
+		echo "Kantipur Radio"
+		;;
+	12)
+		clear
 		echo "BBC 1xtra"
 		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1xtra_mf_p
 		;;
 	*)
-		echo "Invalid Choice"
+		echo "Invalid choice...Quitting...."
 		exit 0
 		;;
 esac
