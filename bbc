@@ -1,0 +1,83 @@
+#!/bin/bash
+clear
+echo -e "=========================\n"
+echo "Welcome To Terminal Radio"
+echo -e "\n=========================\n\n"
+echo -e "__________________________\n"
+echo -e "MENU FOR RADIO STATIONS"
+echo -e "__________________________"
+echo "1)BBC World Service News Stream"
+echo "2)BBC World Service UK Stream"
+echo "3)BBC Asian Network"
+echo "4)BBC Radio 3"
+echo "5)BBC Radio 4"
+echo "6)BBC Radio 5 live"
+echo "7)BBC Radio 5 live sportball extra"
+echo "8)BBC Radio 6 Music"
+echo "9)BBC Radio 2"
+echo "10)BBC Radio 1"
+echo -e "11)BBC 1xtra\n\n"
+
+read -p "What would you like to hear: " station
+
+case "$station" in
+	1)
+		clear
+		echo "BBC World Service News Stream"
+		mplayer http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-einws
+		;;
+	2)
+		clear
+		echo "BBC World Service UK Stream"
+		mplayer http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk
+		;;
+	3)
+		clear
+		echo "BBC Asian Network"
+		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_asianet_mf_p
+		;;
+	4)
+		clear
+		echo "BBC Radio 3"
+		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p
+		;;
+	5)
+		clear
+		echo "BBC Radio 4"
+		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_p
+		;;
+	6)
+		clear
+		echo "BBC Radio 5 live"
+		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5live_mf_p
+		;;
+	7)
+		clear
+		echo "BBC Radio 5 live sportball extra"
+		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5extra_mf_p
+		;;
+	8)
+		clear
+		echo "BBC Radio 6 Music"
+		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_6music_mf_p
+		;;
+	9)
+		clear
+		echo "BBC Radio 2"
+		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p
+		;;
+	10)
+		clear
+		echo "BBC Radio 1"
+		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p
+		;;
+	11)
+		clear
+		echo "BBC 1xtra"
+		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1xtra_mf_p
+		;;
+	*)
+		echo "Invalid Choice"
+		exit 0
+		;;
+esac
