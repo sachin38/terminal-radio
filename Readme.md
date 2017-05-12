@@ -12,4 +12,4 @@ Requirements
 Usage
 ====================
 	./tradio
-	![Screenshot] (https://github.com/sachin38/terminal-radio/blob/master/screenshot.png)
+	![alt text] (https://github.com/sachin38/terminal-radio/blob/master/screenshot.png)
