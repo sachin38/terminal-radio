@@ -75,6 +75,7 @@ case "$station" in
 	11)
 		clear
 		echo "Kantipur Radio"
+		mplayer http://broadcast.radiokantipur.com:7248
 		;;
 	12)
 		clear
