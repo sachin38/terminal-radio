@@ -19,80 +19,81 @@ echo "10)BBC Radio 1"
 echo "11)Kantipur Radio"
 echo "12)BBC 1xtra"
 echo "13)Mechi Tunes"
-echo -e "14)Radio Nepal\n\n"
+echo -e "14)Radio Nepal\n"
 
-read -p "What would you like to hear: " station
+read -p "What would you like to hear: " choice
+station=$(sed "${choice}q;d" stations)
 
-case "$station" in
+case "$choice" in
 	1)
 		clear
 		echo "BBC World Service News Stream"
-		mplayer http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-einws
+		mplayer $station 
 		;;
 	2)
 		clear
 		echo "BBC World Service UK Stream"
-		mplayer http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk
+		mplayer $station 
 		;;
 	3)
 		clear
 		echo "BBC Asian Network"
-		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_asianet_mf_p
+		mplayer $station
 		;;
 	4)
 		clear
 		echo "BBC Radio 3"
-		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p
+		mplayer $station
 		;;
 	5)
 		clear
 		echo "BBC Radio 4"
-		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_p
+		mplayer $station
 		;;
 	6)
 		clear
 		echo "BBC Radio 5 live"
-		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5live_mf_p
+		mplayer $station
 		;;
 	7)
 		clear
 		echo "BBC Radio 5 live sportball extra"
-		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5extra_mf_p
+		mplayer $station
 		;;
 	8)
 		clear
 		echo "BBC Radio 6 Music"
-		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_6music_mf_p
+		mplayer $station
 		;;
 	9)
 		clear
 		echo "BBC Radio 2"
-		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p
+		mplayer $station
 		;;
 	10)
 		clear
 		echo "BBC Radio 1"
-		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p
+		mplayer $station
 		;;
 	11)
 		clear
 		echo "Kantipur Radio"
-		mplayer http://broadcast.radiokantipur.com:7248
+		mplayer $station
 		;;
 	12)
 		clear
 		echo "BBC 1xtra"
-		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1xtra_mf_p
+		mplayer $station
 		;;
 	13)
 		clear
 		echo "Mechi Tunes"
-		mplayer http://ujyaalo-stream.softnep.com:7710/stream.mp3
+		mplayer $station
 		;;
 	14)
 		clear
 		echo "Radio Nepal"
-		mplayer http://core.itech.host:8790/live
+		mplayer $station
 		;;
 	*)
 		echo "Invalid choice...Quitting...."
