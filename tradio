@@ -18,7 +18,8 @@ echo "9)BBC Radio 2"
 echo "10)BBC Radio 1"
 echo "11)Kantipur Radio"
 echo "12)BBC 1xtra"
-echo -e "13)Radio Nepal\n\n"
+echo "13)Mechi Tunes"
+echo -e "14)Radio Nepal\n\n"
 
 read -p "What would you like to hear: " station
 
@@ -84,6 +85,11 @@ case "$station" in
 		mplayer http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1xtra_mf_p
 		;;
 	13)
+		clear
+		echo "Mechi Tunes"
+		mplayer http://ujyaalo-stream.softnep.com:7710/stream.mp3
+		;;
+	14)
 		clear
 		echo "Radio Nepal"
 		mplayer http://core.itech.host:8790/live
