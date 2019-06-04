@@ -17,9 +17,7 @@ echo "8)BBC Radio 6 Music"
 echo "9)BBC Radio 2"
 echo "10)BBC Radio 1"
 echo "11)Kantipur Radio"
-echo "12)BBC 1xtra"
-echo "13)Mechi Tunes"
-echo -e "14)Radio Nepal\n"
+echo -e "12)BBC 1xtra"
 
 read -p "What would you like to hear: " choice
 station=$(sed "${choice}q;d" stations)
@@ -83,16 +81,6 @@ case "$choice" in
 	12)
 		clear
 		echo "BBC 1xtra"
-		mplayer $station
-		;;
-	13)
-		clear
-		echo "Mechi Tunes"
-		mplayer $station
-		;;
-	14)
-		clear
-		echo "Radio Nepal"
 		mplayer $station
 		;;
 	*)
