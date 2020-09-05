@@ -12,5 +12,5 @@ Requirements
 
 Usage
 ====================
-	./tradio
+	./tradio or sh tradio
 
