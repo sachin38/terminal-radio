@@ -8,7 +8,7 @@ Info
 	
 Requirements
 ====================
-	mplayer
+	mplayer and bash
 
 Usage
 ====================
