@@ -20,7 +20,7 @@ echo "11)Kantipur Radio"
 echo  "12)BBC 1xtra"
 echo -e "13)Radio Nepal"
 
-read -p "What would you like to hear: " choice
+read -p "What would you like to hear today: " choice
 station=$(sed "${choice}q;d" stations)
 
 case "$choice" in
